@@ -1,0 +1,8 @@
+name: Awesome readme to data
+description: A GitHub Action that transform awesome readme to data and commit in PR 
+runs:
+  using: 'node12'
+  main: 'index.js'
+branding:
+  icon: database
+  color: green

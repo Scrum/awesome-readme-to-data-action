@@ -1,0 +1,24 @@
+{
+  "name": "awesome-readme-to-data-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Scrum/awesome-readme-to-data-action.git"
+  },
+  "keywords": [],
+  "author": "scrum",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Scrum/awesome-readme-to-data-action/issues"
+  },
+  "homepage": "https://github.com/Scrum/awesome-readme-to-data-action#readme",
+  "dependencies": {
+    "actions-toolkit": "^3.0.1",
+    "dotenv": "^8.2.0"
+  }
+}
