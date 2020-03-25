@@ -7,7 +7,7 @@ Toolkit.run(async tools => {
 }, {
   event: [
     'pull_request.opened',
-    'issues.opened'
+    'pull_request.synchronize'
   ],
   secrets: [
     'GITHUB_TOKEN'
