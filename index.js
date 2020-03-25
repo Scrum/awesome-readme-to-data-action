@@ -4,8 +4,8 @@ const fs = require('fs');
 const path = require('path');
 
 Toolkit.run(async tools => {
-  const data = fs.readFileSync(path.resolve('./readme.md'));
-  console.dir({data})
+  const contents = tools.getFile('readme.md')
+  console.dir({contents})
   tools.log.success('Label successfully applied. Have a nice day!')
 }, {
   event: [
