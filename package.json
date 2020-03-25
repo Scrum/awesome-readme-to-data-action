@@ -1,4 +1,5 @@
 {
+  "version": "0.0.2",
   "name": "awesome-readme-to-data-action",
   "main": "index.js",
   "scripts": {
