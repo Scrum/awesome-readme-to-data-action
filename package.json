@@ -2,10 +2,13 @@
   "name": "awesome-readme-to-data-action",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "xo"
   },
   "dependencies": {
     "actions-toolkit": "^3.0.1",
     "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "xo": "^0.28.0"
   }
 }
