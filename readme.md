@@ -20,6 +20,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: Scrum/awesome-readme-to-data-action@v1
+        with:
+          entry: 'path/to/file'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```

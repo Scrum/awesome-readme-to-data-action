@@ -7,8 +7,8 @@ const makeDir = require('make-dir');
 
 
 Toolkit.run(async tools => {
-  const readmeFileName = 'readme.md';
-  const dataFileName = path.resolve(path.join(tools.workspace, './data/data.json'));
+  const readmeFileName = tools.inputs.entry;
+  const dataFileName = path.resolve(path.join(tools.workspace, tools.inputs.output));
   const contents = tools.getFile(readmeFileName);
   const data = await awesomeReadmeToData(contents);
   makeDir.sync(path.dirname(dataFileName));
