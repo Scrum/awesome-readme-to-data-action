@@ -1,8 +1,12 @@
 name: Awesome readme to data
 description: A GitHub Action that transform awesome readme to data and commit in PR 
 inputs:
-  entry: ./README.md
-  output: ./data/dataset.json
+  entry: 
+    description: Entry file for parsing
+    default: './README.md'
+  output: 
+    description: Output file for save data
+    default: './data/dataset.json'
 runs:
   using: 'docker'
   image: 'Dockerfile'
