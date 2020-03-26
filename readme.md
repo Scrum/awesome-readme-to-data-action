@@ -18,6 +18,7 @@ jobs:
     name: awesome readme to data
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - uses: Scrum/awesome-readme-to-data-action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
