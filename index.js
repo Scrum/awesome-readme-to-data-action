@@ -11,11 +11,6 @@ Toolkit.run(async tools => {
   const contents = tools.getFile(readmeFileName);
   const data = await awesomeReadmeToData(contents);
   fs.writeFileSync(path.resolve(path.join(tools.workspace, dataFileName)), data);
-
-  await tools.runInWorkspace('git', ['status']);
-  await tools.runInWorkspace('git', ['add', '.']);
-  await tools.runInWorkspace('git', ['-m', '"feat: added new data"']);
-  await tools.runInWorkspace('git', ['push']);
 }, {
   event: [
     'pull_request.opened',
