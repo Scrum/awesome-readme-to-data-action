@@ -10,9 +10,10 @@ You can create a `.github/workflows/create-dataset.yml` file:
 name: Awesome readme to data action
 on:
   pull_request:
-    types: [opened]
-  branches:
-    - master
+    types: [opened, synchronize]
+    branches:
+      - master
+
 jobs:
   build:
     name: awesome readme to data
