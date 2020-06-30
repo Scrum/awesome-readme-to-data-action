@@ -4,7 +4,7 @@
 
 ## Usage
 
-You can create a `.github/workflows/label-sponsors.yml` file:
+You can create a `.github/workflows/create-dataset.yml` file:
 
 ```yaml
 name: Awesome readme to data action
